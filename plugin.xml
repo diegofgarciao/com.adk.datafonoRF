@@ -47,7 +47,7 @@
     </config-file>
    
        
-    <source-file src="src/android/Comdata.java" target-dir="src/com/adk/datafono/"/>
+    <source-file src="src/android/Comdata.java" target-dir="src/com/adk/datafonoRF/"/>
     <source-file src="src/android/Datafono.java" target-dir="src/com/adk/functions/"/>
     <source-file src="src/android/IfaceCallbackDatafono.java" target-dir="src/com/adk/Interfaces/"/>
     <!--source-file src="src/android/libs/PclServiceExport_1.9.23.jar" target-dir="libs" framework="true" /-->
