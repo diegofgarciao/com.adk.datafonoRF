@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="com.ci24.datafono"
+        version="1.0.0">
+
+    <name>Datafono</name>
+ <engines>
+    <engine name="cordova" version=">=3.4.0"/>
+  </engines>
+         <asset src="www/datacom.js" target="js/datacom.js"/>
+        <js-module src="www/datacom.js" name="datacom">
+<clobbers target="datacom" />
+   
+  </js-module> 
+    <platform name="android">
+            <config-file target="AndroidManifest.xml" parent="application">
+              
+                         <service android:name="com.ingenico.pclservice.PclService" />
+      <service android:name="com.ingenico.pclservice.BluetoothService" />    
+                      </config-file>
+                             
+             <config-file target="AndroidManifest.xml" parent="/*">
+                  
+                   <service android:name="com.ingenico.pclservice.PclService" />
+        <service android:name="com.ingenico.pclservice.BluetoothService" />   
+            <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+            <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+            <uses-permission android:name="android.hardware.location.gps" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+            <uses-permission android:name="android.permission.BLUETOOTH" />
+            <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+           
+          
+        </config-file>
+    
+ <config-file target="res/xml/config.xml" parent="/*">
+       
+      <feature name="Comdata">
+              
+        <param name="android-package" value="com.ci24.datafono.Comdata"/>
+               <lib-file src="src/android/libs/PclUtilities_1.6.jar"/>
+  <lib-file src="src/android/libs/PclServiceLib_1.9.23.jar"/>
+          
+      </feature>
+    </config-file>
+   
+       
+    <source-file src="src/android/Comdata.java" target-dir="src/com/ci24/datafono/"/>
+    <source-file src="src/android/Datafono.java" target-dir="src/com/ci24/functions/"/>
+    <source-file src="src/android/IfaceCallbackDatafono.java" target-dir="src/com/ci24/Interfaces/"/>
+    <!--source-file src="src/android/libs/PclServiceExport_1.9.23.jar" target-dir="libs" framework="true" /-->
+    <source-file src="src/android/libs/PclUtilities_1.6.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/libs/PclServiceLib_1.9.23.jar" target-dir="libs" framework="true"/>
+    <source-file src="src/android/libs/armeabi/libpclapi.so" target-dir="libs/armeabi" framework="true"/>
+    <source-file src="src/android/libs/armeabi/libpclnetwork.so" target-dir="libs/armeabi" framework="true"/>
+    <source-file src="src/android/libs/armeabi/libpcltools.so" target-dir="libs/armeabi" framework="true"/>
+    <source-file src="src/android/libs/armeabi/libtlvtree.so" target-dir="libs/armeabi" framework="true"/>
+            
+  </platform>
+    
+</plugin>
