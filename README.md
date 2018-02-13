@@ -127,6 +127,6 @@ datacom.getInfo(function (serial) {
 ```
 ## Authors
 
-* **Oscar Cortes** - **Diego Garcia**
+* **Oscar Cortes - Diego Garcia**
 
 
