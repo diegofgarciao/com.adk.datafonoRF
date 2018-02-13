@@ -1,4 +1,4 @@
-# com.adk.datafonoRF
+# com.adk.datafono
 
 plugin for Bluetooth payment communication
 
