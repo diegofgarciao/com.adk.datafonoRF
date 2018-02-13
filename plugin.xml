@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
-        id="com.adk.datafonoRF"
-        version="1.0.0">
+        id="com.adk.datafono"
+        version="2.0.0">
 
     <name>Datafono</name>
  <engines>
@@ -39,7 +39,7 @@
        
       <feature name="Comdata">
               
-        <param name="android-package" value="com.adk.datafonoRF.Comdata"/>
+        <param name="android-package" value="com.adk.datafono.Comdata"/>
                <lib-file src="src/android/libs/PclUtilities_1.6.jar"/>
   <lib-file src="src/android/libs/PclServiceLib_1.9.23.jar"/>
           
@@ -47,7 +47,7 @@
     </config-file>
    
        
-    <source-file src="src/android/Comdata.java" target-dir="src/com/adk/datafonoRF/"/>
+    <source-file src="src/android/Comdata.java" target-dir="src/com/adk/datafono/"/>
     <source-file src="src/android/Datafono.java" target-dir="src/com/adk/functions/"/>
     <source-file src="src/android/IfaceCallbackDatafono.java" target-dir="src/com/adk/Interfaces/"/>
     <!--source-file src="src/android/libs/PclServiceExport_1.9.23.jar" target-dir="libs" framework="true" /-->

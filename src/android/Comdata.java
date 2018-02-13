@@ -1,4 +1,5 @@
-package com.adk.datafonoRF;
+package com.adk.datafono;
+
 import com.adk.Interfaces.IfaceCallbackDatafono;
 import com.adk.functions.Datafono;
 import com.ingenico.pclutilities.*;

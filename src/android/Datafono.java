@@ -4,7 +4,7 @@ package com.adk.functions;
 import com.adk.Interfaces.IfaceCallbackDatafono;
 import com.ingenico.pclutilities.*;
 import com.ingenico.pclservice.*;
-import com.adk.datafonoRF.Comdata;
+import com.adk.datafono.Comdata;
 import android.annotation.SuppressLint;
 import android.app.*;
 import android.content.IntentFilter;
